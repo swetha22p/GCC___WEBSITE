@@ -1,0 +1,48 @@
+<div class="main">
+    <div class="about">
+        <img [src]="bg" alt="Global Coding Club Logo">
+        <div class="about-text">
+            <p class="welcome-text">Welcome to Global Coding Club</p>
+            <p class="tagline">- where passion for coding meets global community!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>Our Vision</h2>
+            <p>We envision a world where coding is accessible to everyone, where knowledge is shared freely, and where technology serves as a force for good...</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>What We Do</h2>
+        </div>
+
+        <div class="cards-container">
+            <div class="card" *ngFor="let activity of activities">
+                <div class="card-body">
+                    <p class="card-title">{{ activity.title }}</p>
+                    <p class="card-text">{{ activity.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>Join Us</h2>
+            <p>Ready to take your coding skills to the next level? Join GCC today and be part of a global network of passionate coders...</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Follow Us:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/kiet-special-coding/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/kiet_global_coding_club?igsh=MW52aXc1eHhpcWhxeA==" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/KIET-SpecialCodingBatch" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
+        <p>&copy; 2024 Global Coding Club. All rights reserved.</p>
+    </div>
+</div>

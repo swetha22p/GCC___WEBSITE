@@ -1,0 +1,14 @@
+<div class="postblogs">
+    <div class="form-container">
+      <div class="mb-3">
+        <label for="titleInput" class="form-label">Title</label>
+        <input type="text" class="form-control" id="titleInput" placeholder="Enter title" [(ngModel)]="title">
+      </div>
+      <div class="mb-3">
+        <label for="blogLinkTextarea" class="form-label">Add blog link here</label>
+        <textarea class="form-control" id="blogLinkTextarea" rows="3" placeholder="Enter your blog link here" [(ngModel)]="link"></textarea>
+      </div>
+      <button (click)="onclick()" class="btn-submit">Submit</button>
+    </div>
+  </div>
+  

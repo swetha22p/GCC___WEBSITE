@@ -1,0 +1,19 @@
+<div class="blogs">
+    <div class="blogs-container">
+        <h2>Latest Blogs</h2>
+        <input type="text" placeholder="Search blogs..." [(ngModel)]="searchTerm" class="search-input" />
+        <div *ngFor="let blog of filteredBlogs()" class="outer-card">
+            <div class="inner-card">
+                <div class="blog-header">
+                    <h3 class="blog-title">{{ blog.title }}</h3>
+                    <div class="blog-actions">
+                        <button (click)="viewBlog(blog.link)" class="view-blog-btn">View Blog</button>
+                        <!-- <button (click)="deleteBlog(blog._id)" class="delete-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="blogs">
+    <h2>Latest Projects</h2>
+    <input type="text" placeholder="Search projects..." [(ngModel)]="searchTerm" class="search-input" />
+    <div class="blogs-container">
+        <div *ngFor="let project of filteredProjects()" class="outer-card">
+            <div class="inner-card">
+                <div class="blog-header">
+                    <h3 class="blog-title">{{ project.title }}</h3>
+                    <div class="blog-actions">
+                        <button (click)="viewProject(project.link)" class="view-blog-btn">View Project</button>
+                        <!-- <button (click)="deleteProject(project._id)" class="delete-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
