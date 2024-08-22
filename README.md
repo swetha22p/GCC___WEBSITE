@@ -1,3 +1,10 @@
+
+<<<<<<< HEAD
+Your local changes
+=======
+Changes from the remote repository
+>>>>>>> main
+
 # Gcc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
@@ -25,3 +32,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# GCC___WEBSITE
+>>>>>>> 5cb98e815ee33b8934b75a2d318406a15fd7746d
